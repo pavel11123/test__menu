@@ -1,0 +1,35 @@
+@use "sass:math";
+
+@import "base.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+/*------------------ОБОЛОЧКА------------------*/
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+/*------------------ОБОЛОЧКА------------------*/
+
+/*------------------HEADER------------------*/
+@import "header.scss";
+/*------------------HEADER------------------*/
+
+/*------------------MAIN------------------*/
+.main {
+  flex: 1 1 auto;
+}
+/*------------------MAIN------------------*/
+
+/*------------------FOOTER------------------*/
+@import "footer.scss";
+/*------------------FOOTER------------------*/
